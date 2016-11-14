@@ -1,12 +1,8 @@
 #!/usr/bin/env node
 "use strict";
 
-var args = process.argv.slice(2);
+var exec = require('child_process').exec;
 
-function sum(args) {
-    return args.reduce(function (sum, v) {
-        return sum + Number(v);
-    }, 0);
-}
-
-console.log(sum(args));
+exec("history 10 | awk '{print $2}'", function (err, stdout, stderr) {
+  console.log(stdout);
+});

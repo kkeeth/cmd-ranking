@@ -1,11 +1,7 @@
 #!/usr/bin/env node
-const args = process.argv.slice(2);
+const exec = require('child_process').exec;
 
-function sum(args) {
-    return args.reduce((sum, v) => {
-        return sum + Number(v);
-    }, 0);
-}
-
-console.log(sum(args));
+exec("history 10 | awk '{print $2}'", function(err, stdout, stderr) {
+  console.log(stdout);
+});
 

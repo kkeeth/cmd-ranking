@@ -1,8 +1,8 @@
 # cmdrnk
 
 
-# License
+## License
 [MIT](https://github.com/k-kuwahara/cmdrnk/blob/master/LICENSE)
 
-# Other
+## Other
 Welcomes your comments and code review at any time !

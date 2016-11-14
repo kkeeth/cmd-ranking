@@ -4,6 +4,7 @@
   "description": "show ranking about your command history",
   "main": "index.js",
   "scripts": {
+    "cmdrnk": "./src/index.js",
     "test": "test"
   },
   "keywords": [
