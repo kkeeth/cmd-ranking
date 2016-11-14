@@ -1,0 +1,25 @@
+{
+  "name": "cmdrank",
+  "version": "0.1.0",
+  "description": "show ranking about your command history",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "cmdrank",
+    "ranking"
+  ],
+  "author": {
+    "name": "k-kuwahara",
+    "email": {
+      "work": "kuwahara@lepra.jp",
+      "personal": "zensin0082@gmail.com"
+    },
+    "url": "https://github.com/k-kuwahara"
+  },
+  "devDependencies": {
+    "babel-core": ""
+  },
+  "license": "MIT"
+}
