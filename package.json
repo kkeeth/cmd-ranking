@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "cmdrnk": "./src/index.js",
+    "dev": "gulp",
+    "build": "gulp babel",
     "test": "test"
   },
   "keywords": [

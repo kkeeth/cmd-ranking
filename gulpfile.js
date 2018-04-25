@@ -1,15 +1,15 @@
 var gulp = require("gulp");
 var babel = require("gulp-babel");
 
-gulp.task('babel', function() {
+gulp.task('babel', () => {
   gulp.src('./src/*.es6')
     .pipe(babel({
       presets: ['es2015']
     }))
-    .pipe(gulp.dest('./src/'))
+    .pipe(gulp.dest('./dist'))
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', () => {
   gulp.watch('./src/*.es6', ['babel'])
 });
 
