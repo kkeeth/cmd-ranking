@@ -1,3 +1,7 @@
+[![npm version](https://badge.fury.io/js/cmdrnk.svg)](https://badge.fury.io/js/cmdrnk)
+[![Build Status](https://travis-ci.org/k-kuwahara/cmdrnk.svg?branch=master)](https://travis-ci.org/k-kuwahara/cmdrnk)
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+
 # cmdrnk
 
 ## Install
