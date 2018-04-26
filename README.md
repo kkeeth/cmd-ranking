@@ -12,6 +12,13 @@ $ npm install --global cmdrnk
 $ cmdrank 10
 ```
 
+### Options:
+
+```
+  -v, --version   Show version
+  -h, --help      Show help
+```
+
 ## License
 [MIT](https://github.com/k-kuwahara/cmdrnk/blob/master/LICENSE)
 
