@@ -3,7 +3,7 @@
 
 var package_json = require('../package.json');
 var chalk = require('chalk');
-var yargs = require('yargs').usage('' + chalk.yellow.bold('Usage:\n') + ('' + chalk.yellow.bold('  cmdrnk <number>\n\n'))).options({
+var yargs = require('yargs').usage('' + chalk.yellow.bold('Usage:\n') + ('' + chalk.yellow.bold('  cmdrank <number>\n\n'))).options({
    'v': {
       alias: 'version',
       describe: 'Show version'

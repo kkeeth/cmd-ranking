@@ -1,6 +1,6 @@
 {
   "name": "cmdrank",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "show ranking about your command history",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
   "author": {
     "name": "k-kuwahara",
     "email": {
-      "work": "kuwahara@lepra.jp",
+      "work": "k_kuwahara@yumemi.co.jp",
       "personal": "zensin0082@gmail.com"
     },
     "url": "https://github.com/k-kuwahara"

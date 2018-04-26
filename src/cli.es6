@@ -4,7 +4,7 @@ const package_json = require('../package.json')
 const chalk = require('chalk')
 const yargs = require('yargs')
    .usage( `${chalk.yellow.bold('Usage:\n')}`
-         + `${chalk.yellow.bold('  cmdrnk <number>\n\n')}`
+         + `${chalk.yellow.bold('  cmdrank <number>\n\n')}`
    )
    .options({
       'v': {
