@@ -11,6 +11,9 @@ exec(cmd, function (err, stdout, stderr) {
       console.error('exec error: ' + err);
       return;
    }
+   if (stderr) {
+      console.info(stderr);
+      return;
+   }
    console.log(stdout);
-   console.info(stderr);
 });
