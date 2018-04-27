@@ -4,6 +4,10 @@
 var package_json = require('../package.json');
 var chalk = require('chalk');
 var yargs = require('yargs').usage('' + chalk.yellow.bold('Usage:\n') + ('' + chalk.yellow.bold('  cmdrank <number>\n\n'))).options({
+   'n': {
+      alias: 'number',
+      describe: 'Show rank count'
+   },
    'v': {
       alias: 'version',
       describe: 'Show version'
