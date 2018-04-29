@@ -2,23 +2,28 @@
   "name": "cmdrank",
   "version": "0.1.2",
   "description": "show ranking about your command history",
+  "license": "MIT",
   "bin": "bin/index.js",
   "scripts": {
     "cmdrnk": "./src/index.js",
     "dev": "gulp",
-    "build": "gulp babel",
+    "build": "gulp babel:bin && gulp babel:lib",
+    "build:bin": "gulp babel:bin",
+    "build:lib": "gulp babel:lib",
     "test": "test"
   },
   "keywords": [
+    "cmd-ranking",
     "cmdrank",
-    "ranking"
+    "ranking",
+    "cli tool"
   ],
+  "engines": {
+    "node": ">=6.0"
+  },
   "author": {
     "name": "k-kuwahara",
-    "email": {
-      "work": "k_kuwahara@yumemi.co.jp",
-      "personal": "zensin0082@gmail.com"
-    },
+    "email": "zensin0082@gmail.com",
     "url": "https://github.com/k-kuwahara"
   },
   "devDependencies": {
@@ -29,9 +34,9 @@
     "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.2.2"
   },
-  "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.1",
+    "node-alias": "^1.0.4",
     "yargs": "^11.0.0"
   }
 }

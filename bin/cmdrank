@@ -1,12 +1,16 @@
 #!/usr/bin/env node
 'use strict';
 
-var package_json = require('../package.json');
+var cmdrank = require('../lib/cmd-ranking');
 var chalk = require('chalk');
 var yargs = require('yargs').usage('' + chalk.yellow.bold('Usage:\n') + ('' + chalk.yellow.bold('  cmdrank <number>\n\n'))).options({
-   'n': {
-      alias: 'number',
+   'c': {
+      alias: 'count',
       describe: 'Show rank count'
+   },
+   'n': {
+      alias: 'no-options',
+      describe: 'Command name only'
    },
    'v': {
       alias: 'version',
@@ -18,4 +22,4 @@ var yargs = require('yargs').usage('' + chalk.yellow.bold('Usage:\n') + ('' + ch
    }
 }).locale('en');
 
-var argv = yargs.argv;
+cmdrank.run();

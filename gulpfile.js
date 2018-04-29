@@ -3,8 +3,13 @@ const gulp    = require("gulp"),
       plumber = require('gulp-plumber'),
       rename  = require('gulp-rename')
 
-gulp.task('babel', () => {
-   gulp.src('./src/*.es6')
+const path = {
+   "bin": "./src/bin/*.js",
+   "lib": "./src/lib/*.js"
+}
+
+gulp.task('babel:bin', () => {
+   gulp.src(path.bin)
       .pipe(plumber({
          errorHandler: (err) => {
             console.log(err)
@@ -17,10 +22,24 @@ gulp.task('babel', () => {
          extname: ''
       }))
       .pipe(gulp.dest('./bin'))
-});
+})
+
+gulp.task('babel:lib', () => {
+  gulp.src(path.lib)
+    .pipe(plumber({
+      errorHandler: (err) => {
+        console.log(err)
+      }
+    }))
+    .pipe(babel({
+      presets: ['es2015']
+    }))
+    .pipe(gulp.dest('./lib'))
+})
 
 gulp.task('watch', () => {
-   gulp.watch('./src/*.es6', ['babel'])
+   gulp.watch(path.bin, ['babel:bin'])
+   gulp.watch(path.lib, ['babel:lib'])
 });
 
-gulp.task('default', ['babel', 'watch'])
+gulp.task('default', ['babel:bin', 'babel:lib', 'watch'])
