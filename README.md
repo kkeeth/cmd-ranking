@@ -2,25 +2,29 @@
 [![Build Status](https://travis-ci.org/k-kuwahara/cmdrank.svg?branch=master)](https://travis-ci.org/k-kuwahara/cmdrank)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
-# cmdrank
+# cmd-rankking
+`cmd-ranking (cmdrank)` is a command made by nodejs.
+It counts and displays the commands executed in the current shell.
 
 ## Install
 
 ```bash
-$ npm install --global cmdrank
+$ npm install --global cmd-ranking
 ```
 
 ## Usage
 
 ```bash
-$ cmdrank 10
+$ cmdrank -c 10
 ```
 
 ### Options:
 
 ```
-  -v, --version   Show version
-  -h, --help      Show help
+  -c, --count      Show rank count
+  -n, --no-options Command name only
+  -v, --version    Show version
+  -h, --help       Show help
 ```
 
 ## License

@@ -3,9 +3,10 @@
 const cmdrank = require('../lib/cmd-ranking')
 const chalk = require('chalk')
 const yargs = require('yargs')
-   .usage( `${chalk.yellow.bold('Usage:\n')}`
-         + `${chalk.yellow.bold('  cmdrank <number>\n\n')}`
+   .usage( 'Usage:\n'
+         + `${chalk.green.bold('  $0 [-c <number>] [--no-options]\n')}`
    )
+   .example(`${chalk.green.bold('$0 -c 15 -n')}`)
    .options({
       'c': {
          alias: 'count',

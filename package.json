@@ -1,11 +1,14 @@
 {
-  "name": "cmdrank",
+  "name": "cmd-ranking",
   "version": "0.2.0",
   "description": "show ranking about your command history",
   "license": "MIT",
-  "bin": "bin/index.js",
+  "main": "./lib/cmd-ranking",
+  "bin": {
+    "cmd-ranking": "./bin/cmd-ranking",
+    "cmdrank": "./bin/cmdrank"
+  },
   "scripts": {
-    "cmdrnk": "./src/index.js",
     "dev": "gulp",
     "build": "gulp babel:bin && gulp babel:lib",
     "build:bin": "gulp babel:bin",
