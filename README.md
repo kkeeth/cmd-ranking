@@ -1,5 +1,5 @@
-[![npm version](https://badge.fury.io/js/cmdrank.svg)](https://badge.fury.io/js/cmdrank)
-[![Build Status](https://travis-ci.org/k-kuwahara/cmdrank.svg?branch=master)](https://travis-ci.org/k-kuwahara/cmdrank)
+[![npm version](https://badge.fury.io/js/cmd-ranking.svg)](https://badge.fury.io/js/cmd-ranking)
+[![Build Status](https://travis-ci.org/k-kuwahara/cmd-ranking.svg?branch=master)](https://travis-ci.org/k-kuwahara/cmd-ranking)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 # cmd-ranking
