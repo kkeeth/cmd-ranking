@@ -19,6 +19,9 @@ function run() {
    else if (argv.v) {
       console.log(pkg.version)
    }
+   else if (argv.c && typeof argv.c !== 'number') {
+      show_help()
+   }
    else {
       const shell = get_shell()
       const rank  = get_rank(shell)
