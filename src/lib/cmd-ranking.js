@@ -20,7 +20,7 @@ function run() {
       console.log(pkg.version)
    }
    else if (argv.c && typeof argv.c !== 'number') {
-      show_help()
+      show_help("Please specify the number of lines to display.\n")
    }
    else {
       const shell = get_shell()
