@@ -3,7 +3,7 @@ module.exports = require('yargs')
    .usage( 'Usage:\n'
          + `${chalk.green.bold('  $0 [-c <number>] [--options]\n')}`
    )
-   .example(`${chalk.green.bold('$0 -c 15 -n')}`)
+   .example(`${chalk.green.bold('$0 -c 15')}`)
    .options({
       'c': {
          alias: 'count',
