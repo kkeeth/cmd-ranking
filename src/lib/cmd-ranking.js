@@ -1,7 +1,7 @@
+const pkg   = require('../package.json')
+const argv  = require('./argv')
 const yargs = require('yargs')
-const pkg = require('../package.json')
-const argv = yargs.argv
-const exec = require('child_process').execSync
+const exec  = require('child_process').execSync
 const DEFAULT_BASH  = 'bash'
 const DEFAULT_COUNT = 10
 
@@ -75,7 +75,7 @@ function get_rank(shell) {
          break;
    }
 
-   if (argv.n) {
+   if (!argv.o) {
       get_rank_cmd += " | awk '{print $1}'"
    }
    get_rank_cmd += " | perl -pe 's/[^\\x00-\\x7F]+//g' | " + REST_CMD
