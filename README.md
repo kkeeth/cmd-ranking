@@ -1,5 +1,6 @@
 [![npm version](https://badge.fury.io/js/cmd-ranking.svg)](https://badge.fury.io/js/cmd-ranking)
 [![Build Status](https://travis-ci.org/k-kuwahara/cmd-ranking.svg?branch=master)](https://travis-ci.org/k-kuwahara/cmd-ranking)
+![node](https://img.shields.io/badge/node-%3E%3D%208.0.0-brightgreen.svg?style=social)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 # cmd-ranking
