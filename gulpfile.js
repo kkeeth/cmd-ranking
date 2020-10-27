@@ -9,14 +9,14 @@ const path = {
 }
 
 gulp.task('babel:bin', () => {
-   gulp.src(path.bin)
+   return gulp.src(path.bin)
       .pipe(plumber({
          errorHandler: (err) => {
             console.log(err)
          }
       }))
       .pipe(babel({
-         presets: ['es2015']
+         presets: ['@babel/preset-env']
       }))
       .pipe(rename({
          extname: ''
@@ -25,21 +25,22 @@ gulp.task('babel:bin', () => {
 })
 
 gulp.task('babel:lib', () => {
-  gulp.src(path.lib)
-    .pipe(plumber({
-      errorHandler: (err) => {
-        console.log(err)
-      }
-    }))
-    .pipe(babel({
-      presets: ['es2015']
-    }))
-    .pipe(gulp.dest('./lib'))
+   return gulp.src(path.lib)
+      .pipe(plumber({
+        errorHandler: (err) => {
+          console.log(err)
+        }
+      }))
+      .pipe(babel({
+        presets: ['@babel/preset-env']
+      }))
+      .pipe(gulp.dest('./lib'))
 })
 
+// watch files
 gulp.task('watch', () => {
-   gulp.watch(path.bin, ['babel:bin'])
-   gulp.watch(path.lib, ['babel:lib'])
-});
+   gulp.watch(path.bin, gulp.series('babel:bin'))
+   gulp.watch(path.lib, gulp.series('babel:lib'))
+})
 
-gulp.task('default', ['babel:bin', 'babel:lib', 'watch'])
+gulp.task('default', gulp.series('babel:bin', 'babel:lib', 'watch'))
