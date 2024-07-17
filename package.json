@@ -22,16 +22,16 @@
     "cli tool"
   ],
   "engines": {
-    "node": ">=10.0"
+    "node": ">=20.0"
   },
   "author": {
-    "name": "k-kuwahara",
+    "name": "kkeeth",
     "email": "zensin0082@gmail.com",
-    "url": "https://github.com/k-kuwahara"
+    "url": "https://github.com/kkeeth"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/k-kuwahara/cmd-ranking"
+    "url": "https://github.com/kkeeth/cmd-ranking"
   },
   "devDependencies": {
     "@babel/core": "7.24.5",
