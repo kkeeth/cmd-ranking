@@ -1,11 +1,9 @@
 language: node_js
 node_js:
-  - '14'
-  - '12'
-  - '10'
+  - '20'
 sudo: false
 notifications:
   email: false
 branches:
   only:
-    - master
+    - main
